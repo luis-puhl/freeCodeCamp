@@ -48,7 +48,7 @@ The initial declaration of the `homeworkStack` should not be changed.
 
 ```js
 assert(
-  code.match(/=/g).length === 1 &&
+  code.match(/\WhomeworkStack\s*=[^=]/g).length === 1 &&
     /homeworkStack\s*=\s*\["BIO12"\s*,\s*"HIS80"\s*,\s*"MAT122"\s*,\s*"PSY44"\]/.test(
       code
     )
